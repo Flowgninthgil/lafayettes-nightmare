@@ -1,0 +1,144 @@
+﻿# POPS = {
+# 	s:STATE_MAZOVIA = {
+# 		region_state:CPL = {
+# 			create_pop = {
+# 				culture = polish
+# 				size = 1642000
+# 			}
+# 			create_pop = {
+# 				culture = lithuanian
+# 				size = 20000
+# 			}
+# 			create_pop = {
+# 				culture = ashkenazi
+# 				size = 232000
+# 			}
+# 			create_pop = {
+# 				culture = north_german
+# 				size = 28004
+# 			}
+# 			create_pop = {
+# 				culture = polish
+# 				religion = protestant
+# 				size = 16000
+# 			}
+# 			# some land was taken away from shlyahta and given to free orthodox farmers
+# 			# create_pop = {
+# 			# 	pop_type = farmers
+# 			# 	culture = polish
+# 			# 	size = 20000
+# 			# }
+# 			create_pop = {
+# 				pop_type = aristocrats
+# 				culture = polish
+# 				size = 20000
+# 			}
+# 			# few hundred russian land owners were given ~10% of lands
+# 			create_pop = {
+# 				pop_type = aristocrats
+# 				culture = russian
+# 				religion = orthodox
+# 				size = 5000
+# 			}
+# 			create_pop = {
+# 				pop_type = bureaucrats
+# 				culture = russian
+# 				religion = orthodox
+# 				size = 500
+# 			}
+# 			create_pop = {
+# 				pop_type = clercs
+# 				culture = russian
+# 				religion = orthodox
+# 				#religion = orthodox
+# 				size = 2500
+# 			}
+# 			create_pop = {
+# 				culture = russian
+# 				religion = orthodox
+# 				#religion = orthodox
+# 				size = 6000
+# 			}
+# 		}
+# 	}
+# 	s:STATE_GREATER_POLAND = {
+# 		region_state:CPL = {
+# 			create_pop = {
+# 				culture = polish
+# 				size = 875396
+# 			}
+# 			create_pop = {
+# 				culture = polish
+# 				religion = protestant
+# 				size = 32000
+# 			}
+# 			create_pop = {
+# 				culture = ashkenazi
+# 				size = 112400
+# 			}
+# 			create_pop = {
+# 				culture = north_german
+# 				size = 28000
+# 			}
+# 			create_pop = {
+# 				pop_type = aristocrats
+# 				culture = polish
+# 				size = 15000
+# 			}
+# 			# few hundred russian land owners were given ~10% of lands
+# 			create_pop = {
+# 				pop_type = aristocrats
+# 				culture = russian
+# 				religion = orthodox
+# 				size = 3000
+# 			}
+# 			create_pop = {
+# 				culture = russian
+# 				religion = orthodox
+# 				size = 4000
+# 			}			
+# 		}
+# 	}
+# 	s:STATE_LESSER_POLAND = {
+# 		region_state:CPL = {
+# 			create_pop = {
+# 				culture = polish
+# 				size = 1028396
+# 			}
+# 			create_pop = {
+# 				culture = polish
+# 				religion = protestant
+# 				size = 24000
+# 			}
+# 			create_pop = {
+# 				culture = ashkenazi
+# 				size = 119212
+# 			}
+# 			create_pop = {
+# 				culture = ukrainian
+# 				size = 88000
+# 			}
+# 			create_pop = {
+# 				culture = north_german
+# 				size = 20000
+# 			}
+# 			create_pop = {
+# 				pop_type = aristocrats
+# 				culture = polish
+# 				size = 20000
+# 			}
+# 			# few hundred russian land owners were given ~10% of lands
+# 			create_pop = {
+# 				pop_type = aristocrats
+# 				culture = russian
+# 				religion = orthodox
+# 				size = 4000
+# 			}
+# 			create_pop = {
+# 				culture = russian
+# 				religion = orthodox
+# 				size = 5000
+# 			}					
+# 		}
+# 	}
+# }
