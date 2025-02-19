@@ -1,0 +1,23 @@
+﻿DIPLOMACY = {
+	c:PRU = {
+		create_diplomatic_pact = {
+ 			country = c:POL
+ 			type = personal_union
+	 	}
+		create_bidirectional_truce = {
+			country = c:POL
+			months = 36
+		}
+	}
+
+	c:POL = {
+		#set_relations = { country = c:RUS value = -30 }
+		#set_relations = { country = c:PRU value = -30 }
+		#set_relations = { country = c:AUS value = -30 }
+		#set_relations = { country = c:TUR value = -30 }
+		#set_relations = { country = c:FRA value = 15 }
+		#set_relations = { country = c:KRA value = 15 }
+		#set_relations = { country = c:GBR value = 5 }
+		add_liberty_desire = 20
+	}
+}

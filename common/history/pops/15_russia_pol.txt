@@ -1,0 +1,127 @@
+﻿POPS = {
+	s:STATE_MAZOVIA = {
+		#Mazovia - DONE
+		region_state:POL = {
+			# few hundred russian land owners were given ~10% of lands
+			create_pop = {
+				pop_type = aristocrats
+				culture = russian
+				religion = orthodox
+				size = 3000
+			}
+			create_pop = {
+				culture = polish
+				size = 970792
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 180591
+			}
+			create_pop = {
+				culture = north_german
+				size = 39499
+			}
+			create_pop = {
+				culture = russian
+				size = 50083
+			}
+			create_pop = {
+				culture = byelorussian
+				size = 50440
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 21106
+			}
+		}
+	}
+	s:STATE_GREATER_POLAND = {
+		#Warszawa - DONE
+		region_state:POL = {
+			create_pop = {
+				pop_type = aristocrats
+				culture = russian
+				religion = orthodox
+				size = 4000
+			}
+			create_pop = {
+				culture = polish
+				size = 2004469
+			}
+			create_pop = {
+				culture = polish
+				religion = protestant
+				size = 30000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 358977
+			}
+			create_pop = {
+				culture = north_german
+				size = 134245
+			}
+			create_pop = {
+				culture = russian
+				size = 56600
+			}
+		}
+	}
+	s:STATE_LESSER_POLAND = {
+		#Lublin - DONE
+		region_state:POL = {
+			create_pop = {
+				pop_type = aristocrats
+				culture = russian
+				religion = orthodox
+				size = 2000
+			}
+			create_pop = {
+				culture = polish
+				size = 633163
+			}
+			create_pop = {
+				culture = polish
+				religion = protestant
+				size = 26000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 117162
+			}
+			create_pop = {
+				culture = north_german
+				size = 19663
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 160774
+			}
+			create_pop = {
+				culture = russian
+				size = 33435
+			}
+		}
+	}
+	s:STATE_POSEN = {
+		region_state:POL = {
+			create_pop = {
+				culture = north_german
+				size = 540400
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 16000
+			}
+			create_pop = {
+				culture = polish
+				size = 871204
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 141160
+			}
+		}
+	}
+}
