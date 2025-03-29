@@ -1,0 +1,138 @@
+﻿je_the_martyr_of_nations = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = je_the_martyr_of_nations_za_wolnosc_nasza_i_wasza
+				trigger = {
+					global_var:bpm_je_march_to_radicalism_progress >= 100
+				}
+			}
+			triggered_desc = {
+				desc = je_the_martyr_of_nations_calm
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+
+
+	is_shown_when_inactive = {
+		hidden_trigger = {
+			has_global_variable = bpm_je_march_to_radicalism_progress
+			NOT = { has_global_variable = peoples_springtime_happened }
+			NOT = { has_global_variable = peoples_springtime_happening }
+		}
+		bpm_country_is_in_europe = yes
+	}
+
+	#change this for the compatch
+	possible = {
+		hidden_trigger = {
+			has_global_variable = bpm_je_march_to_radicalism_progress
+			NOT = { has_global_variable = peoples_springtime_happened }
+			NOT = { has_global_variable = peoples_springtime_happening }
+		}
+	}
+
+	invalid = {
+		hidden_trigger = {
+			OR = {
+				has_variable = bpm_march_to_radicalism_complete_local_var
+				has_global_variable = peoples_springtime_happened
+			}
+		} 
+		# The people have already sprung
+	}
+
+	immediate = {
+		
+	}
+
+	complete = {
+		AND = {
+			custom_tooltip = {
+				text = "bpm_je_progress_complete"
+				has_global_variable = bpm_je_march_to_radicalism_progress
+				global_var:bpm_je_march_to_radicalism_progress >= 120
+			}
+			custom_tooltip = {
+				text = "bpm_peoples_springtime_spark_happened"
+				has_global_variable = peoples_springtime_happening
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					bpm_country_is_in_europe = yes
+					NOT = { this = c:RUS }
+				}
+
+				hidden_effect = {
+					remove_modifier = bpm_pre_peoples_springtime
+				}
+				add_modifier = {
+					name = bpm_pre_peoples_springtime
+					multiplier = {
+						value = global_var:bpm_je_march_to_radicalism_progress
+						divide = 100
+						max = 1
+					}
+					months = 24
+				}
+				if = {
+					limit = {
+						global_var:bpm_je_march_to_radicalism_progress >= 100
+						bpm_country_laws_ok_voting = no
+						NOR = {
+							this = c:GBR
+						}
+						NOT = { has_global_variable = bpm_march_to_radicalism_complete_var }
+					}
+					add_radicals = {
+						value = small_radicals
+					}
+				}
+			}
+		}
+	}
+
+	progressbar = yes
+	current_value = {
+		value = global_var:bpm_je_march_to_radicalism_progress
+		max = 120
+	}
+
+	goal_add_value = {
+		add = 120
+		max = 120
+	}
+
+	on_complete = {
+		set_global_variable = {
+			name = bpm_march_to_radicalism_complete_var
+		}
+		set_variable = {
+			name = bpm_march_to_radicalism_complete_local_var
+		}
+		if = {
+			limit = {
+				bpm_country_is_in_europe = yes
+				NOT = { this = c:RUS }
+			}
+			add_journal_entry = {
+				type = je_springtime_of_the_peoples
+			}
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

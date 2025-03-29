@@ -20,6 +20,13 @@ liberal_party = {
 				}
 			}
 			triggered_desc = {
+				desc = party_kalisz_party
+				trigger = {
+					exists = c:POL
+					THIS = c:POL
+				}
+			}
+			triggered_desc = {
 				desc = party_liberal_gbr
 				trigger = {
 					exists = c:GBR
@@ -418,6 +425,7 @@ liberal_party = {
 			value = 0
 			desc = "base_value"
 		}
+		
 		if = {
 			limit = {
 				owner = {
@@ -810,22 +818,7 @@ liberal_party = {
 		# 	}
 		# }
 
-		if = {
-			limit = {
-				owner = { 
-					this = c:POL
-				}
-			}
-			if = {
-				limit = {
-					is_interest_group_type = ig_radicals
-				}
-				add = {
-					value = -100
-					desc = "lafayette_pro_independence"
-				}
-			}
-		}
+		
 		if = {
 			limit = {
 				owner = { 
@@ -842,6 +835,7 @@ liberal_party = {
 				}
 			}
 		}
+		
 		if = { # anti-serfdom
 			limit = {
 				owner = {
@@ -1472,5 +1466,8 @@ liberal_party = {
 				}
 			}
 		}
+
+		
 	}
+	
 }

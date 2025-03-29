@@ -1,0 +1,83 @@
+﻿l_english:
+
+##### Congress Poland, Galicia and Lodomeria and Free City of Kraków
+### Conservatives
+
+ # Konserwatyści
+
+ ig_konsweratysci: "Konserwatyści"
+ ig_konsweratysci_desc: "Although conservatism as an ideology is not widely known, nevertheless certain groups of the bourgeoisie and nobility proposed to adapt to the new realities. Many conservatives accepted the new realities of partition, but there are also those who believe that Poland can regain its independence only through a great war of the European powers."
+ 
+ ig_konswerwatysci_moderate: "Konserwatyści (Moderate)"
+ ig_konswerwatysci_moderate_desc: "Although conservatism as an ideology is not widely known, nevertheless certain groups of the bourgeoisie and nobility proposed to adapt to the new realities. Many conservatives accepted the new realities of partition, but there are also those who believe that Poland can regain its independence only through a great war of the European powers."
+ 
+ # Stańczycy
+ ig_stanczycy: "Stańczycy"
+ ig_stanczycy_desc: "The Stańczycy are a political grouping that formed in the 1860s, but their origins date back to the early 1830s. They condemn attempts to gain independence through armed struggle and conspiracy; instead, they call for maintaining loyalty to the Kingdom of Prussia, which they see as a continuation of the former Polish state."
+
+ ### Liberals
+
+ # Kaliszanie
+ ig_kaliszanie: "Kaliszanie"
+ ig_kaliszanie_desc: "A subgroup of Polish liberals, called ’Kaliszanie’, are followers of Benjamin Constant’s liberal ideas. Supportive of the maintenance of the status quo and the autonomy of the nucleus of the Kingdom of Poland, the carrying out of limited agricultural reforms and the moderate promotion of industry."
+
+ # Pedecy (Postępowcy)
+ 
+ ig_pedecy: "Pedecy"
+ ig_pedecy_desc: "Although initially one of many liberal-radical subgroups, the Pedecy have grown into a sizable force worthy of weighing in with. Being a synthesis of liberal-socialist views with an admixture of solidarity, and turning slowly to conservative positions, the Pedecy support land reform, industrialization, the provision of social welfare for the population and the autonomy of the Polish state."
+
+ ### Agrarians
+ 
+ # Ludowcy
+ ig_ludowcy: "Ludowcy"
+ ig_ludowcy_desc: "The Peasant Movement (Ludowcy/Ruch Ludowy) in the Polish lands is a small movement that supports the implementation of agrarian reforms for the benefit of the peasants they represent. Although these are only its seeds, the Peasant Movement will grow stronger and faster, undergoing changes left and right, all in an effort to help the misery of the peasantry."
+
+ ### National Democrats (Liberals)
+ 
+ ig_national_democrats: "Narodowi Demokraci"
+ ig_national_democrats_desc: "Narodowa Demokracja (National Democracy) is a conglomeration of more right-wing ideologies, primarily National Liberalism, as well as Conservatism, Economic Liberalism and Agrarianism. Based on nationalism, positivism and conservative-liberalism, the National Democrats promote organic work, modernization of the economy, democracy and the building of a Polish state within national borders, emphasizing the ominousness coming from the Germans."  
+
+ ### Left-wing
+
+ # Leleweliści (Podgrupa lewicy demokratycznej)
+
+ ig_lelewelisci: "Leleweliści"
+ ig_lelewelisci_desc: "Although the Towarzystwo Patriotyczne was a gathering of many radicals and republicans, it was divided into many factions and groups in disagreement. One of the major ones are the Leleweliści, following Joachim Lelewel. Divided into numerous groups, they are all united in one goal - the need to recreate an independent Polish state with its fraternal nations. Though the present times are turbulent, and the partitioning executioner oppresses the Poles, the Polish people as well as many other oppresed nations will persevere through these difficult times. Za wolność naszą i waszą!"
+
+ ig_szlachta: "Szlachta"
+ ig_szlachta_desc: "Although many nobles joined the more conservative groups and parties, eagerly accepting the new realities, some did not accept the new world order. With love for their country, filled with patriotism and rebellion, patriotic nobles paved the way at the forefront of independence efforts and the building of Polish statehood."
+
+ party_party_of_freedom: "Party of Freedom"
+ party_party_of_soil: "Party of Soil"
+ party_kalisz_party: "Kalisz Party" 
+
+ Adam_Jerzy: "Adam Jerzy"
+ Jan_Jozef: "Jan Józef"
+ Antoni_Zygmunt: "Antoni Zygmunt"
+ Sciegienny: "Ściegienny"
+ Helcel: "Helcel"
+ Pawel: "Paweł"
+ Popiel: "Popiel"
+ Baranowski: "Baranowski"
+ Lelewel: "Lelewel"
+ Czartoryski: "Czartoryski"
+ Morawski: "Morawski"
+
+ Hugo_I_Henckel: "Hugo I Henckel"
+ von_Donnersmarck: "von Donnersmarck"
+
+ Eduard_Heinrich: "Eduard Heinrich"
+ Flottwell: "Flottwell"
+
+ Stanislaw: "Stanisław"
+ Kostka_Choromanski: "Kostka Choromański"
+
+ test_desc: "\n\n#lore O Poland! So long as your angelic soul\nIs cased with in a jovial skull,\nSo long wiII the executioner chop your body,\nNor will your vengeful sword cause terror,\nSo long will you have a hyena prowling over you\nAnd a grave to seize you - open-eyed!\n\nCast off the last shred of those hideous rags,\nThat burning shirt of Deianira:\nAnd rise, unashamed, like great statues,\nNaked-washed in the mire of the Styx,\nNew - insolent in iron nakedness -\nNot shamed by anything - immortal! \n\n- Juliusz Słowacki, Agamemnon’s Tomb, 1839#!"
+
+ je_the_martyr_of_nations: "The Martyr of Nations"
+ je_the_martyr_of_nations_reason: "Although much time has passed since the Noble Uprising, and the creation of the autonomous Kingdom of Poland, the hunger for freedom and independence has never died, contrary to what the Prussians initially expected and noticed. This hunger continues to fuel a spiral of conspiracy and perpetual discontent, which is fought by the Prussian authorities with ferocity through even fiercer repressions, colonization and increasing frictions between local administrations.\n\nThe progressive militarization of Prussia and it's efforts to use nationalism to reestablish its dominance in Germany, as well as the rise of Messianism and Winkelriedism, and the love of freedom will inevitably come up against each other. The result of this confrontation will be bloody, and remembered for centuries to come.\n\n#v Thits is a [Concept('concept_bpm_global_je', 'Global Journal Entry')].#! It is tied to the $je_march_to_radicalism$ [Concept('concept_journal_entry', 'Journal Entry')] and it #P gains progress#! through both local events, as well as the general European rise in radicalism.\n\n#lore O Poland! So long as your angelic soul\nIs cased within a jovial skull,\nSo long wiII the executioner chop your body,\nNor will your vengeful sword cause terror,\nSo long will you have a hyena prowling over you\nAnd a grave to seize you - open-eyed!\n\nCast off the last shred of those hideous rags,\nThat burning shirt of Deianira:\nAnd rise, unashamed, like great statues,\nNaked-washed in the mire of the Styx,\nNew - insolent in iron nakedness -\nNot shamed by anything - immortal! \n\n- Juliusz Słowacki, Agamemnon’s Tomb, 1839#!"
+ je_the_martyr_of_nations_za_wolnosc_nasza_i_wasza: "#b#RZa wolność naszą i waszą!#!#!"
+ je_the_martyr_of_nations_calm: "Independence movements are minor with a status quo present."
+
+ 
+

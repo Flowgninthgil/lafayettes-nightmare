@@ -933,22 +933,6 @@ conservative_party = {
 			}
 			if = {
 				limit = {
-					is_interest_group_type = ig_radicals
-				}
-				add = {
-					value = -100
-					desc = "lafayette_pro_independence"
-				}
-			}
-		}
-		if = {
-			limit = {
-				owner = { 
-					this = c:POL
-				}
-			}
-			if = {
-				limit = {
 					is_interest_group_type = ig_socialists
 				}
 				add = {
@@ -974,92 +958,6 @@ conservative_party = {
 				}
 			}
 		}
-
-		if = {
-			limit = {
-				owner = { 
-					this = c:POL
-				}
-			}
-			if = {
-				limit = {
-					is_interest_group_type = ig_intelligentsia
-				}
-				add = {
-					value = 100
-					desc = "lafayette_pro_dependence"
-				}
-			}
-		}
-		
-		if = {
-			limit = {
-				owner = { 
-					this = c:POL
-				}
-			}
-			if = {
-				limit = {
-					is_interest_group_type = ig_liberals
-				}
-				add = {
-					value = 100
-					desc = "lafayette_pro_dependence"
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				owner = { 
-					this = c:POL
-				}
-			}
-			if = {
-				limit = {
-					is_interest_group_type = ig_liberals
-				}
-				add = {
-					value = 100
-					desc = "lafayette_pro_dependence"
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				owner = { 
-					this = c:POL
-				}
-			}
-			if = {
-				limit = {
-					is_interest_group_type = ig_conservatives
-				}
-				add = {
-					value = 100
-					desc = "lafayette_pro_dependence"
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				owner = { 
-					this = c:POL
-				}
-			}
-			if = {
-				limit = {
-					is_interest_group_type = ig_landowners
-				}
-				add = {
-					value = 100
-					desc = "lafayette_pro_dependence"
-				}
-			}
-		}
-
 		
 
 		if = {

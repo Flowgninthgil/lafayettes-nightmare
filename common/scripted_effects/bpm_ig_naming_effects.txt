@@ -55,6 +55,7 @@ bpm_rename_trade_unions_ig = {
 		}
 		ig:ig_trade_unions ?= { set_interest_group_name = ig_conservative_unions }
 	}
+	
 	else = {
 		ig:ig_trade_unions ?= { set_interest_group_name = ig_trade_unions }
 	}
@@ -215,12 +216,6 @@ bpm_rename_agpop_ig = {
 		ig:ig_agrarian_populists ?= { set_interest_group_name = ig_donghak }
 	}
 	else_if = {
-		limit = {
-			this = c:POL
-		}
-		ig:ig_agrarian_populists ?= { set_interest_group_name = ig_ludowcy_democratic }
-	}
-	else_if = {
 		limit = { ig:ig_agrarian_populists ?= { bpm_ig_is_socialist = yes } }
 		ig:ig_agrarian_populists ?= { set_interest_group_name = ig_agrarian_socialists }
 	}
@@ -235,13 +230,23 @@ bpm_rename_agpop_ig = {
 	}
 	else_if = {
 		limit = {
+			this = c:POL
+		}
+		ig:ig_agrarian_populists ?= { set_interest_group_name = ig_ludowcy }
+		ig:ig_landowners ?= { set_interest_group_name = ig_szlachta }
+	}
+	
+	#Bauernbewegung
+	else_if = {
+		limit = {
 			OR = {
 				country_has_primary_culture = cu:north_german
 				country_has_primary_culture = cu:south_german
 			}
 			NOR = {
-				this = c:SWI
 				has_variable = peoples_springtime_fully_ended
+				this = c:SWI
+				this = c:UBD
 			}
 		}
 		ig:ig_agrarian_populists ?= { set_interest_group_name = ig_bauernbewegung }
@@ -453,6 +458,13 @@ bpm_rename_radlib_ig = {
 	}
 	else_if = {
 		limit = {
+			this = c:POL
+		}
+		ig:ig_radicals ?= { set_interest_group_name = ig_lelewelisci }
+	}
+	
+	else_if = {
+		limit = {
 			this = c:BRZ
 			has_law = law_type:law_monarchy
 		}
@@ -524,6 +536,7 @@ bpm_rename_radlib_ig = {
 			NOR = { 
 				has_variable = peoples_springtime_fully_ended 
 				this = c:SWI
+				this = c:UBD
 			}
 		}
 		ig:ig_radicals ?= { set_interest_group_name = ig_demokraten }
@@ -649,6 +662,14 @@ bpm_rename_liberal_ig = {
 	}
 	else_if = {
 		limit = {
+			this = c:POL
+		}
+		ig:ig_liberals ?= { set_interest_group_name = ig_kaliszanie }
+	}
+
+	
+	else_if = {
+		limit = {
 			has_variable = bpm_je_modernizers_renamed_into_modernizers
 			has_journal_entry = je_bpm_modernizers
 		}
@@ -670,6 +691,7 @@ bpm_rename_liberal_ig = {
 			NOR = { 
 				has_variable = peoples_springtime_fully_ended 
 				this = c:SWI
+				this = c:UBD
 			}
 		}
 		ig:ig_liberals ?= { set_interest_group_name = ig_parlamentarisch_liberale }
@@ -715,6 +737,12 @@ bpm_rename_natlib_ig = {
 		limit = { this = c:USA }
 		if = {
 			limit = {
+				has_variable = bpm_2nd_party_system
+			}
+			ig:ig_national_liberals ?= { set_interest_group_name = ig_popular_sovereignty }
+		}
+		if = {
+			limit = {
 				NOT = { has_variable = bpm_rec_libreps }
 			}
 			ig:ig_national_liberals ?= { set_interest_group_name = ig_war_democrats }
@@ -731,7 +759,9 @@ bpm_rename_natlib_ig = {
 		else_if = {
 			limit = {
 				has_variable = bpm_spoils_aftermath
-				NOT = { has_variable = bpm_spoils_stalwart }
+				NOT = { has_variable = bpm_progressives_weak }
+				NOT = { has_variable = bpm_progressives_moderate }
+				NOT = { has_variable = bpm_progressives_strong }
 				ig:ig_national_liberals ?= {
 					has_party = yes
 					party = { is_party_type = conservative_party }
@@ -742,7 +772,6 @@ bpm_rename_natlib_ig = {
 		else_if = {
 			limit = {
 				has_variable = bpm_spoils_aftermath
-				NOT = { has_variable = bpm_spoils_liberal }
 				ig:ig_national_liberals ?= {
 					has_party = yes
 					party = { is_party_type = conservative_party }
@@ -754,6 +783,12 @@ bpm_rename_natlib_ig = {
 	else_if = {
 		limit = { bpm_country_is_latin_american = yes }
 		ig:ig_national_liberals ?= { set_interest_group_name = ig_positivists }
+	}
+	else_if = {
+		limit = {
+			this = c:POL
+		}
+		ig:ig_national_liberals ?= { set_interest_group_name = ig_national_democrats }
 	}
 	else = {
 		ig:ig_national_liberals ?= { set_interest_group_name = ig_national_liberals }
@@ -789,6 +824,14 @@ bpm_rename_marlib_ig = {
 		limit = { this = c:BIC }
 		ig:ig_market_liberals ?= { set_interest_group_name = ig_utilitarians }
 	}
+	else_if = {
+		limit = {
+			this = c:POL
+		}
+		ig:ig_market_liberals ?= { set_interest_group_name = ig_pedecy }
+	}
+
+	
 	else = {
 		ig:ig_market_liberals ?= { set_interest_group_name = ig_market_liberals }
 	}
@@ -801,20 +844,6 @@ bpm_rename_conservative_ig = {
 			has_law = law_type:law_monarchy
 		}
 		ig:ig_conservatives ?= { set_interest_group_name = ig_saquaremas }
-	}
-	else_if = {
-		limit = {
-			OR = {
-				this = c:POL
-				this = c:KRA
-			}
-			ig:ig_conservatives ?= { 
-				NOT = {
-					bpm_ig_is_paternalistic = yes
-				} 
-			}
-		}
-		ig:ig_conservatives ?= { set_interest_group_name = ig_stanczycy }
 	}
 	else_if = {
 		limit = { ig:ig_conservatives ?= { 
@@ -851,8 +880,9 @@ bpm_rename_conservative_ig = {
 		limit = {
 			this = c:POL
 		}
-		ig:ig_conservatives ?= { set_interest_group_name = ig_stanczycy }
+		ig:ig_conservatives ?= { set_interest_group_name = ig_konswerwatysci_moderate }
 	}
+	
 	else_if = { 
 		limit = { this = c:USA }
 		if = {
@@ -889,6 +919,7 @@ bpm_rename_conservative_ig = {
 			NOR = { 
 				has_variable = peoples_springtime_fully_ended 
 				this = c:SWI
+				this = c:UBD
 			}
 		}
 		ig:ig_conservatives ?= { set_interest_group_name = ig_konstitutionell_liberale }
@@ -937,6 +968,13 @@ bpm_rename_reactionary_ig = {
 		}
 		ig:ig_reactionaries ?= { set_interest_group_name = ig_slavophiles }
 	}
+	else_if = {
+		limit = {
+			this = c:POL
+		}
+		ig:ig_reactionaries ?= { set_interest_group_name = ig_konsweratysci }
+	}
+	
 	else_if = {
 		limit = { this = c:USA }
 		if = {
@@ -1004,6 +1042,7 @@ bpm_rename_reactionary_ig = {
 			NOR = { 
 				has_variable = peoples_springtime_fully_ended 
 				this = c:SWI
+				this = c:UBD
 			}
 		}
 		ig:ig_reactionaries ?= { set_interest_group_name = ig_konservative }
@@ -1027,12 +1066,6 @@ bpm_rename_reactionary_ig = {
 			ig:ig_reactionaries ?= { bpm_ig_is_theocratic = yes }
 		}
 		ig:ig_reactionaries ?= { set_interest_group_name = ig_theocrats }
-	}
-	else_if = {
-		limit = {
-			this = c:POL
-		}
-		ig:ig_reactionaries ?= { set_interest_group_name = ig_ludowcy_conservative }
 	}
 	else_if = {
 		limit = {
